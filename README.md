@@ -46,3 +46,4 @@ With this:
    - Folder: / root
 6. Save.
 7. Your site will be live at a GitHub Pages URL.
+deploy refresh
