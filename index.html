@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Little Universe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress-wrap">
+    <div id="progressBar"></div>
+  </div>
+
+  <nav class="top-nav">
+    <div class="logo">♡ Us</div>
+    <button id="musicBtn" class="pill-btn">Play music</button>
+  </nav>
+
+  <!-- Optional: add your own music file in assets/music.mp3 -->
+  <audio id="bgMusic" loop>
+    <source src="assets/music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main>
+    <section class="hero section">
+      <div class="sparkle sparkle-1">✦</div>
+      <div class="sparkle sparkle-2">✧</div>
+      <p class="eyebrow">A little website for us</p>
+      <h1>Our Little Universe</h1>
+      <p class="subtitle">
+        Scroll down to continue our story. Collect the hearts, unlock memories,
+        and find the hidden message at the end.
+      </p>
+      <a href="#level1" class="start-btn">Start the story ↓</a>
+    </section>
+
+    <section id="level1" class="section level">
+      <div class="level-text">
+        <p class="chapter">Level 01</p>
+        <h2>Where it started</h2>
+        <p>
+          Replace this with the story of how you met, your first conversation,
+          or one simple memory that still makes you smile.
+        </p>
+      </div>
+
+      <div class="photo-stack">
+        <div class="photo-card photo-placeholder">Photo 1</div>
+        <div class="photo-card photo-placeholder">Photo 2</div>
+        <div class="photo-card photo-placeholder">Photo 3</div>
+      </div>
+    </section>
+
+    <section class="section game-section">
+      <p class="chapter">Mini Game</p>
+      <h2>Collect 5 hearts while scrolling</h2>
+      <p class="hint">Tap the floating hearts when you see them.</p>
+
+      <div class="heart-counter">
+        Hearts collected: <span id="heartCount">0</span>/5
+      </div>
+
+      <button class="heart heart-1" aria-label="heart">♥</button>
+      <button class="heart heart-2" aria-label="heart">♥</button>
+      <button class="heart heart-3" aria-label="heart">♥</button>
+      <button class="heart heart-4" aria-label="heart">♥</button>
+      <button class="heart heart-5" aria-label="heart">♥</button>
+    </section>
+
+    <section class="section collage-section">
+      <p class="chapter">Level 02</p>
+      <h2>Favorite memories</h2>
+      <p class="hint">Click each card to reveal a small note.</p>
+
+      <div class="collage-grid">
+        <article class="memory-card" data-note="This is where you can write a cute short message.">
+          <div class="memory-photo">Photo 4</div>
+          <h3>Favorite Day</h3>
+        </article>
+
+        <article class="memory-card" data-note="Write about a trip, date, food place, or random funny moment.">
+          <div class="memory-photo">Photo 5</div>
+          <h3>Random Moment</h3>
+        </article>
+
+        <article class="memory-card" data-note="Write something you love about her here.">
+          <div class="memory-photo">Photo 6</div>
+          <h3>Why I Like You</h3>
+        </article>
+
+        <article class="memory-card" data-note="Write your promise, dream, or future plan together.">
+          <div class="memory-photo">Photo 7</div>
+          <h3>Future Us</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-section">
+      <p class="chapter">Level 03</p>
+      <h2>Our timeline</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>01</span>
+          <p>We met.</p>
+        </div>
+        <div class="timeline-item">
+          <span>02</span>
+          <p>We started talking more.</p>
+        </div>
+        <div class="timeline-item">
+          <span>03</span>
+          <p>We made memories that became our favorite stories.</p>
+        </div>
+        <div class="timeline-item">
+          <span>04</span>
+          <p>And this website became one more memory.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section locked-section">
+      <p class="chapter">Final Level</p>
+      <h2>Hidden message</h2>
+
+      <div id="lockedBox" class="locked-box">
+        <p>Collect all 5 hearts to unlock this message.</p>
+      </div>
+
+      <div id="secretMessage" class="secret-message hidden">
+        <h3>For you, my love</h3>
+        <p>
+          Replace this with your real letter. Make it personal. Tell her what
+          you appreciate, what you remember, and what you are looking forward to.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
